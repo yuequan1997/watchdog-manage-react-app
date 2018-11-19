@@ -44,7 +44,7 @@ export default class ApplicationViewer extends React.Component {
           </FormItem>
 
           <FormItem {...formItemLayout} label="Client Secret">
-            <code>{this.props.application.client_secret}</code>
+            <code>{this.props.application.raw_client_secret}</code>
             <CopyToClipboard  onCopy={()=>{message.info('Successfully copied.');}} text={this.props.application.raw_client_secret}>
               <Button className="copy-button" icon="copy" type="small" />
             </CopyToClipboard>
