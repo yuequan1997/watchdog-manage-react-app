@@ -21,7 +21,7 @@ export default class ApplicationViewer extends React.Component {
           {isLongTag ? `${tag.slice(0, 30)}...` : tag}
         </Tag>
       );
-      return <Tooltip title={'点击跳转授权'} key={tag}>{tagElem}</Tooltip>;
+      return <Tooltip title={'Click to jump to authorization url'} key={tag}>{tagElem}</Tooltip>;
     })
   }
 
